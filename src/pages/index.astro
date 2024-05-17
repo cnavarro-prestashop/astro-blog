@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Greeting from "../components/Greeting";
 import VueCounter from "../components/Counter.vue";
+import SvelteCounter from "../components/Counter.svelte";
+import ReactCounter from "../components/Counter.tsx";
 
 // Style imports
 import "../styles/Counter.css";
@@ -10,12 +11,16 @@ const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <h2>My awesome blog subtitle</h2>
-  <!-- Preact component -->
-  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+  <h2>Counters in Vue, React and Svelte</h2>
 
   <div class="bloc-counter">
     <!-- Vue component -->
     <VueCounter client:visible />
+
+    <!-- Svelte component -->
+    <SvelteCounter client:visible />
+
+    <!-- React component -->
+    <ReactCounter client:visible />
   </div>
 </BaseLayout>
