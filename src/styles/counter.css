@@ -1,0 +1,36 @@
+.bloc-counter button {
+    background: #1b1b1b;
+    border: none;
+    border-radius: 2rem;
+    color: white;
+    font-size: 2em;
+    padding: 2rem;
+    cursor: pointer;
+}
+
+.bloc-counter h1 {
+    color: white;
+    font-size: 2em;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: center;
+}
+
+.bloc-counter .container {
+    max-width: 1000px;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background: #313131;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.bloc-counter .counter {
+    color: white;
+    display: grid;
+    font-size: 2em;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    place-items: center;
+}

@@ -1,9 +1,21 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Greeting from '../components/Greeting';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Greeting from "../components/Greeting";
+import VueCounter from "../components/Counter.vue";
+
+// Style imports
+import "../styles/Counter.css";
+
 const pageTitle = "Home Page";
 ---
+
 <BaseLayout pageTitle={pageTitle}>
   <h2>My awesome blog subtitle</h2>
+  <!-- Preact component -->
   <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
+  <div class="bloc-counter">
+    <!-- Vue component -->
+    <VueCounter client:visible />
+  </div>
 </BaseLayout>

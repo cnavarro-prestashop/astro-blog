@@ -13,7 +13,13 @@
   "dependencies": {
     "@astrojs/preact": "^3.0.0",
     "@astrojs/rss": "^3.0.0",
+    "@astrojs/vue": "^4.2.0",
+    "@types/react": "^18.3.2",
+    "@types/react-dom": "^18.3.0",
     "astro": "^3.1.1",
-    "preact": "^10.11.3"
+    "preact": "^10.11.3",
+    "react": "^19.0.0-beta",
+    "react-dom": "^19.0.0-beta",
+    "vue": "^3.4.27"
   }
 }
